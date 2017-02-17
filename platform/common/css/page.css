@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+/*search页面*/
+html,body{ height: 100%; }
+.mobile-bg{background-color:#f0f0f0;}
+.page-fy{ width:100%;/* height:100%;*/ overflow:hidden;overflow-y: auto; position: relative; padding-top: 44px;}
+.header{position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;}
+.header h1{ height:44px; line-height:44px; background:#5191ce; text-align:center; position: relative; padding: 0 30px;}
+.header .close{ position: absolute; left: 10px; top: 14px;}
+.header .ellipsis{ position: absolute; right: 10px; top: 20px; display: none;}
+.header .title{ font-size:17px; color:#fff; display:inline-block; font-weight: normal;
+width: 100%;
+overflow: hidden;
+ white-space: nowrap;
+text-overflow: ellipsis;
+
+}
+.page-content{ position: relative; }
+.search-box{margin: 10px; position: relative;}
+input{cursor: text; outline: none;}
+.search-box .icon-sea{ position: absolute; top: 9px; left: 20px; max-width: 16px; max-height: 16px;  cursor: pointer;}
+.btn_search{ display: inline-block; background-color: #5191ce; color: #fff; height: 32px; line-height: 32px; text-align: center;border-radius: 5px;}
+.search-box .btn_search{position: absolute; right: 0px; top: 0; width: 20%;}
+.search-box-top .input{ width: 78%;}
+.input{ height: 32px; width: 100%; border-radius: 5px;  padding-left: 3em; color: #969696;}
+.search-sign{ position: absolute; left: 20px;  top: 18px;}
+.max-icon{ max-height: 15px; max-width: 15px;}
+.pointlist{ background: #fff; color: #bfbfbf; } 
+.pointlist li{ line-height: 36px; border-top: 1px solid #bfbfbf; border-bottom:1px solid #bfbfbf;  position: relative;}
+.pointlist-title{ width: 90px; text-align:left; padding-left: 10px; display: inline-block; color: #010101;}
+.pointlist .point-bor{ border-top: none; border-bottom: 2px solid #b8b4b4; }
+.pointlist a{ display: inline-block;}
+.pointlist .list-text{ float: right;color:#010101;  position: absolute;top: 0px; right: 17px;}
+.list-text .dropdown-list{ background: url(../img/icon-down.png?20160930) no-repeat 26% bottom; width:30px; height:17px;
+	      background-size: 50% 50%;}
+.btn-sea{ padding:6px 0px; text-align: center;}
+.btn-sea .btn-search{ width: 88%;text-align: center; color: #fff; background: #5191ce; display: inline-block; 
+	      font-size: 17px; height:36px; line-height: 36px; font-size: 16px;}
+.btn-sea .btn-search:visited{ color: #fff }	     
+.btn-sea .btn-search:hover{ color: #fff;}
+.page-info li{ border-bottom: 1px solid #cfcdcd; }  
+.page-info .page-job{ display: block;background: #fff; color:#807979; padding:10px 30px 10px 10px; position: relative;}     
+.page-job .job-name{  float:left;  width: 54%;}
+.page-job .job-time{  float: right; text-align: right;}
+.page-job h1{ color: #000; font-size: 15px;}
+.page-job .font-col{ color: #ea4b02; font-weight:normal;}
+.page-job h1{ width:100%;/*overflow:hidden; white-space:nowrap; text-overflow:ellipsis;*/ font-weight: normal;}
+.page-info .page-job h1{ width:100%;overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-weight: normal;}
+.page-job .job-area{ width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display: inline-block; font-size: 12px; color: #807979;}
+.icon_rjt{ display: inline-block; width: 9px; height: 15px; position: absolute; right: 10px; top: 24px; background-image: url(../img/down-right.png); background-size: 9px 15px;}
+.time{font-size: 12px;}
+.time i{background: url(../img/icon-time.png?20160930)  no-repeat 75% 35%; width: 24px; height: 24px; background-size: 50% 50%; vertical-align: middle;}
+.top{ position:fixed; z-index: 11; right: 10px; bottom: 10%; }
+.top p{width: 29px; height: 29px; margin-bottom: 14px;}
+.top p img{width:100%; height: 100%;}
+/*Resem选择简历*/
+.resem{margin-top: 40px; text-align: center;}
+.resem .header{ margin-top: 25px; }
+.resem .header .title{ color:#ea4b02; }
+.resem .resem-tp{ margin-top: 15px; }
+.resem .resem-btn{ display:inline-block;color: #fff;font-size: 17px; background: #5191ce;height: 40px; line-height: 40px; padding: 0px 27px;}
+.header .back{ display: inline-block; background: url(../img/chevron-left.png?20160930) center center no-repeat; width: 17px; height: 30px;
+               background-size: 50% 50%; position: absolute; top: 6px; left: 10px;}
+/*发送简历*/
+.chinese{padding-left: 20px; }
+.chinese .chinese-res{ text-align: left; color: #000;display: inline-block;}   
+.chinese .chinese-res:visited{ color: #000;}   
+.chinese .chinese-res:hover{ color: #000;}     
+.chinese-res .active{background: url(../img/ok-circle-blue.png?20160930) center center no-repeat; width: 32px; height: 32px; 
+	            background-size: 50% 50%; vertical-align: middle; }     
+.list-text .pvw{ color: #5191ce; }	            
+.pointlist .point-china{ border-bottom:1px solid #bfbfbf; }
+.btn-sure .btn-search{ height: 44px; line-height: 44px; width: auto; padding: 0px 53px; }
+/*填写简历*/
+.wr-list li{ border-top: none;}
+.pointlist .list-col{ color: #bfbfbf;  top: 10px; right: 25px;}
+.input-ty{ height: 36px;  font-size: 14px; color: #000; width: 86%; padding-left: 6px;}
+.pointlist .font-c{ color: #bfbfbf; }
+.font-c span{ display: inline-block; padding-right: 30px; }
+/*首页*/
+.page-bg{background: url(../img/homepage.jpg?20160930) left bottom no-repeat; width: 100%; height: 100%; background-size:100%; }
+.homepage{ width: 75%; margin: 0px auto; }
+.homepage .logo{ margin-top: 10px; max-width: 72px; max-height: 30px;}
+.homepage .page-title{ color: #1a4679;}
+.page-title h1{font-size: 17px; text-align: center; margin:16px 0px 19px; }
+.page-title p{ text-indent: 1em; }
+/* .page-bg .btn-sure{ bottom: 20% } */
+.btn-sea .view{ background: #0148a9; padding: 0px 15px; font-size: 14px;}
+/*推荐人信息*/
+.list-cent{ text-align: center; margin-bottom: 5px; }
+.inptext .input{ border-radius: 3px; }
+.inptext .intext-em{ border: 1px solid #5191ce; }
+.inptext{ margin: 0px; }
+.inptext .icon-sea{ left: 13px; top: 7px; max-height: 17.5px; }
+.inptext .Email{ top: 9px; left: 10px; }
+.homepage ul{ margin-top: 30px; }
+.homepage li{ margin-bottom: 10px; } 
+.btn-sd{ margin-top: 33px; }
+.btn-sd .btn-search{ width: 100%; }
+/*51帐号登录*/
+.input-bor{ border: 1px solid #ea4b02; }
+.btn-sea .account{ color: #ea4b02; margin-top: 11px;  display: inline-block;}
+.btn-sea .account:visited{ color: #ea4b02; }
+.btn-sea .account:hover{ color: #ea4b02; }
+/*职位详情*/
+.post-det{ padding:0 4%; }
+.post-det .page-job{padding: 16px 0px; }
+.post-job{ margin-bottom: 4px; margin-right: 10px;}
+.post-lt{ float: left; }
+.post-lt h1{ line-height: 26px; }
+.post-logo{ float: right; padding-right: 14%; }
+.post-logo img{ display: inline-block; border: 1px solid #a3a3a3; max-width: 50px; max-width: 50px;}
+.listdl .linedl{ float: left; width: 50%;}
+.linedl dt,dd{ float: left; }
+.page-job .linedl dt{width: 10%;}
+.page-job .linedl dd{width: 85%;}
+.page-job .listdl .linedl dt{width: 20%;}
+.page-job .listdl .linedl dd{width: 80%;}
+.address .linedl dt{width: 20%;}
+.address .linedl dd{width: 78%;}
+
+.linedl .line-d{ color: #000; padding-left: 10px; display: inline-block;}
+.list-text .dropdown-rt{position: absolute; background: url(../img/down-right.png?20160930) left center no-repeat; width: 17px; height: 30px;
+             background-size: 50% 50%;}
+.post-det .list-text{top: 3px;}     
+.address .post-det{ padding-left: 15px; }  
+.address .line-d{ padding-left: 5px; }      
+.pointlist-boon{ margin-top: 13px; overflow: hidden; }
+.pointlist-boon .post-det{padding-top: 15px; padding-right: 20px;  padding-bottom: 15px;}
+.post-det .heart{ display: inline-block;vertical-align: middle; margin-right: 6px;}
+.pointlist-boon li{ border: none;  line-height: 20px; height: auto; }
+.boon-list li{float: left;}
+.post-det .boon{ border: 1px solid #ea4b02; border-radius: 5px; color: #000000; text-align: center; padding: 0px 8px; margin:0 5px 5px 0;}
+.post-det  .boon-list {margin-bottom: 7px;}
+.post-det .boon-top{ margin-top: 9px;}
+.job-list{ overflow: hidden; color: #000; min-height: 120px;}
+.job-list ul li{ list-style: disc; margin-left: 20px;}
+.job-list ol li{ list-style: decimal; margin-left: 24px;}
+.btn-app .btn-search{ padding: 0px 25px; width: auto; border-radius: 5px; }
+.btn-app .app-red{ background: #ea4b02; }
+.job-list p{ line-height: 24px; }
+
+/**/
+.grey_step{ position: absolute; top: 40%; left: 50%; width: 80%; margin-left: -40%; color: #fff; padding: 30px 0; text-align: center; background-color:rgba(0,0,0,0.6);}
+
+.page_bg{ position: fixed; width: 100%; height: 100%; background-color: #000000; top: 0; left: 0; z-index: 998;
+filter:alpha(opacity=60); /*IE滤镜，透明度50%*/
+-moz-opacity:0.6; /*Firefox私有，透明度50%*/
+opacity:0.6;/*其他，透明度50%*/
+}
+.messPrompt{ position: relative; z-index: 999;}
+.fx01_pic{position: absolute; top: 40px; right: 20px; width: 230px; height: 126px;}
+.fx02_pic{position: absolute; top:220px; left: 50%; width: 272px; height: 46px; margin-left:-136px;}
+
+.user_tab .btn_tab{display: block; height: 30px; line-height: 30px; color: #434343; text-align: center; border: #f8a000 2px solid; border-radius: 4px; font-size: 17px;}
+.user_tab .btn_tab_active{background-color: #f8a000; color: #fff;}
+
+.input_list{ position:relative; background-color: #fff; padding: 5px 4px;}
+.input_list:first-child{ border-bottom: #d1d1d1 solid 1px;}
+.input_list input{ height: 32px; line-height: 32px; text-indent: 3em; width: 100%;}
+.input_list i{ display: inline-block; position: absolute; top: 12px; left: 14px;}
+.icon_user{width: 16px; height: 17px; background-image: url(../img/user-grey.png?20160930); background-size: 16px 17px;}
+.icon_sign{width: 17px; height: 16px; background-image: url(../img/bag.png?20160930); background-size: 17px 16px;}
+.user_tab .btn-sd{ margin-top: 10px;}
+
+.prompt{ text-align: center; margin:50px 10px 0px 10px;}
+.prompt p{ font-size: 17px; color: #5191ce; line-height: 54px;}
+.prompt a{background-color: #5191ce; display: block; width: 60%; text-align: center; margin: 10px auto; height: 39px; line-height: 39px; font-size: 16px;}
+.prompt div{background-color: #5191ce; display: block; width: 60%; text-align: center; margin: 10px auto; height: 39px; line-height: 39px; font-size: 16px;color: #f0f0f0;}
+
+.pos_fixb{position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999; background-color: #f0f0f0;}
+.pad_bot{padding-bottom: 48px;}

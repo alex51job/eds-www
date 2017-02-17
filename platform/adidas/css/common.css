@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: #49153c;}
+
+img{width: 100%;}
+.header{position: fixed; top: 0; left: 0; width: 100%; height: 44px; line-height: 44px; z-index: 999; background-color: #333;}
+.header h1{text-align: center; color: #fff; font-size: 16px;}
+
+.main{width: 100%; /*margin-top: 44px;*/ overflow: hidden;}
+.top_main{position:relative; z-index: 99;}
+.main_fn{position: absolute; bottom: 5px; left: 50%; margin-left: -108px; height: 54px; width: 198px; background: url(../img/gubg.png?20170117); background-size: 100% 100%; padding: 7px 9px;}
+#lotteryContainer { position:relative; width: 100%;height:100%;border: #fff solid 1px;}
+#drawPercent {color:#F60;}
+.main_center{background-color: #49153c; padding: 40px 5%;}
+.text_list{ background-color: #370e2d; color: #333; border-radius: 5px; margin-bottom: 10px; padding: 10px 5px;}
+.text_list h2{color: #d5471a; font-size: 16px;}
+.text_list dl{position: relative; padding-left: 52px; line-height: 26px;}
+.text_list dt{position: absolute; left: 0px; top: 0px; color: #fff;}
+.text_list dd{color: #ffdb29;}
+.text_list dd span{color: #fff;}
+.text_list li{line-height: 26px; color: #fff;}
+
+.page_main{ margin-top: 10px; position: relative; z-index: 100; padding: 0 10%; line-height: 34px;}
+.page_main h2{color: #fff; font-size: 18px; text-align: center;}
+.page_main p{color: #ff5fa0; font-size: 12px; margin-bottom: 5px;}
+.line_inp{ background-color: #fff; position: relative; padding-left:42px; margin-bottom: 10px; border-radius: 5px; overflow: hidden;}
+.line_inp input{ width: 100%; height: 36px; line-height: 36px; outline: none;}
+.line_inp i{display: inline-block; position: absolute; top: 8px; background-size: 100% 100%;}
+.icon_user{background:url(../img/icon_user.png?20170117); width: 17px; height: 19px; left: 15px; }
+.icon_phone{background:url(../img/icon_phone.png?20170117); width: 13px; height: 20px; left: 17px;}
+.btn{margin-top: 20px; text-align: center;}
+.btn a{display: inline-block; background-color: #fc4f80; color: #fff; border-bottom: #e43e6d solid 2px; width: 180px; text-align: center; height: 46px; line-height: 46px; font-size: 18px; border-radius: 5px;}
+
+.banner-text{ position: absolute; top: 6%; width: 100%; z-index:100; text-align: center;}
+.banner-text h1{ color: #fc4f80; font-size: 24px;}
+.banner-text .lineText{ color: #e8c93b; background-color: #311021; display: inline-block; padding:4px 6px; margin: 0px auto;}
+.banner-text .lineText span{color: #ff1500;}
+.banner-text .lineImg{ width: 60%; margin:10px auto 0;}
+.fadeIn {
+        animation-name: fadeIn;
+        -webkit-animation-name: fadeIn; 
+
+        animation-duration: 1.5s;   
+        -webkit-animation-duration: 1.5s;
+
+        animation-timing-function: ease-in-out; 
+        -webkit-animation-timing-function: ease-in-out;     
+
+        
+    }
+.lineText{   
+	animation-duration: 1.8s;   
+    -webkit-animation-duration: 1.8s;
+    }
+    @keyframes fadeIn {
+        0% {
+            transform: scale(0);
+            opacity: 0.0;       
+        }
+        60% {
+            transform: scale(1.1);  
+        }
+        80% {
+            transform: scale(0.9);
+            opacity: 1; 
+        }   
+        100% {
+            transform: scale(1);
+            opacity: 1; 
+        }       
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            -webkit-transform: scale(0);
+            opacity: 0.0;       
+        }
+        60% {
+            -webkit-transform: scale(1.1);
+        }
+        80% {
+            -webkit-transform: scale(0.9);
+            opacity: 1; 
+        }   
+        100% {
+            -webkit-transform: scale(1);
+            opacity: 1; 
+        }       
+    }

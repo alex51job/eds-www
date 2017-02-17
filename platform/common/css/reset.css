@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */
+i,input{
+border:medium none;
+margin: 0;
+padding: 0;
+}
+/** 设置默认字体 **/
+body,input{ font: 14px/1.6 Microsoft YaHei, Arial,tahoma, Srial, helvetica, sans-serif; color:#403f4b; background:#fff;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em{font-style:normal;}
+/** 重置列表元素 **/
+li { list-style: none; }
+/** 重置超链接元**/
+a {
+  text-decoration: none;
+  font-family:Microsoft YaHei,Arial, Helvetica, sans-serif,tahoma, Srial, helvetica, sans-serif;
+}
+
+/** 重置图片元素 **/
+img{ border:0px;}
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/**/
+iframe{ border:none; margin: 0; padding: 0;}
+
+/* 清理浮动 */
+.clearfix:before,.clearfix:after{ 
+    content:""; 
+    display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+
+i{ display:inline-block}
+
+.component{position: absolute; display: none;}
+.section {position: relative;}
+.active .component{display: block;}
+.newpage .component {display: block;}
+

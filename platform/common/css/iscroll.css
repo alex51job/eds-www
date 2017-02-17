@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+#wrapperOuter {
+	overflow: hidden;
+	position: relative;
+	
+}
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.pullDown {
+	text-align: center;
+	height: 40px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #888;
+	font-family: Arial, Microsoft YaHei;
+	top:-40px;
+	width:100%;
+	position:absolute;
+}
+ .pullUp {
+	text-align: center;
+	height: 40px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #888;
+ 	bottom:-40px;
+	font-family: Arial, Microsoft YaHei;
+ 	width:100%;
+	position:absolute;
+}
+
+.loader {
+	display: inline-block;
+	font-size: 0px;
+	padding: 0px;
+	display: block;
+}
+.loader span {
+	vertical-align: middle;
+	border-radius: 100%;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 2px;
+	-webkit-animation: loader 0.8s linear infinite alternate;
+	animation: loader 0.8s linear infinite alternate;
+}
+.loader span:nth-child(1) {
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+	background: rgba(245, 103, 115,0.6);
+}
+.loader span:nth-child(2) {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+	background: rgba(245, 103, 115,0.8);
+}
+.loader span:nth-child(3) {
+	-webkit-animation-delay: -0.26666s;
+	animation-delay: -0.26666s;
+	background: rgba(245, 103, 115,1);
+}
+.loader span:nth-child(4) {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+	background: rgba(245, 103, 115,0.8);
+}
+.loader span:nth-child(5) {
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+	background: rgba(245, 103, 115,0.4);
+}
+ @keyframes loader {
+ from {
+transform: scale(0, 0);
+}
+to {
+	transform: scale(1, 1);
+}
+}
+@-webkit-keyframes loader {
+ from {
+-webkit-transform: scale(0, 0);
+}
+to {
+	-webkit-transform: scale(1, 1);
+}
+}
